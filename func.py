@@ -98,8 +98,9 @@ def sprinkle_sugar(packets=1):
 sprinkle_sugar()    
 sprinkle_sugar(3)
 '''
+
 #mixing positional and keyword arguments
 def brew_custom_cup(drink, size, temperature, milk="whole", sugar=0):
     print(f"Making a {temperature} {size} {drink} with {milk} milk.")
-brew_custom_cup("Latte", "large", "hot", milk="almond", sugar=1)    
+brew_custom_cup("Latte", "large", "hot", milk="almond", sugar=1)
 
