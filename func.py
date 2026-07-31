@@ -85,10 +85,21 @@ brew_cup(temperature="iced", drink="cappuccino", size="medium")
 def cup_label(name, drink):
     print(name + " ordered " + drink)
 cup_label(drink="espresso", name="Alice")  
-'''
+
 
 #default parameter values
 def process_order(name, drink, size="medium", milk="whole"):
     print(f"order for {name}: {size} {drink} with {milk} milk.")
+process_order("Mariam", "fanta") 
 
+
+def sprinkle_sugar(packets=1):
+    print("Adding " + str(packets) + " sugar packets.")
+sprinkle_sugar()    
+sprinkle_sugar(3)
+'''
+#mixing positional and keyword arguments
+def brew_custom_cup(drink, size, temperature, milk="whole", sugar=0):
+    print(f"Making a {temperature} {size} {drink} with {milk} milk.")
+brew_custom_cup("Latte", "large", "hot", milk="almond", sugar=1)    
 
