@@ -62,7 +62,7 @@ def make_drink():
     print(f"Local: {local_count}, Global: {global_sales}")
 make_drink()
 make_drink()    
-'''
+
 
 #non_local keyword
 def run_coffee_cart():
@@ -73,8 +73,16 @@ def run_coffee_cart():
         print(f"Order updated to: {current_order}")
     change_order("Latte")
     print(f"Final cart order: {current_order}")  
-run_coffee_cart()  
-
+run_coffee_cart() 
+'''
+def outer():
+    x = "original"
+    def inner():
+        nonlocal x
+        x = "modified"
+    inner()
+    print(x)
+outer()    
 
 
 
