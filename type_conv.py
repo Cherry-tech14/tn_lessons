@@ -31,7 +31,11 @@ price_with_spaces = " 2500.50 "
 cleaned = price_with_spaces.replace(" ", "")
 value = float(cleaned)
 print(value)
-'''
+
+# parsing multiple numbers
+numbers = "10 20 30 40"
+parts = numbers.split()
+print(parts)
 
 #functions that handles multiple formats
 def parse_nigerian_number(input_string):
@@ -46,3 +50,9 @@ def parse_nigerian_number(input_string):
 print(parse_nigerian_number("1,500.50"))   # 1500.5
 print(parse_nigerian_number("3000"))       # 3000.0
 print(parse_nigerian_number("  250  "))    # 250.0
+'''
+
+transactions = "5000 2500 10000"
+transactions = transactions.split()
+transactions = [int(amount) for amount in transactions]
+print(transactions)
