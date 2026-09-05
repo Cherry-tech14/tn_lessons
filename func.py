@@ -97,10 +97,26 @@ def sprinkle_sugar(packets=1):
     print("Adding " + str(packets) + " sugar packets.")
 sprinkle_sugar()    
 sprinkle_sugar(3)
-'''
+
 
 #mixing positional and keyword arguments
 def brew_custom_cup(drink, size, temperature, milk="whole", sugar=0):
     print(f"Making a {temperature} {size} {drink} with {milk} milk.")
 brew_custom_cup("Latte", "large", "hot", milk="almond", sugar=1)
+
+def greet(name):
+    print("Hello", name)
+greet("Mariam")
+'''
+# local variable
+def greet():
+    name = "Mariam"
+    print(name)
+greet()
+
+# global variable
+name = "Mariam"
+def greet():
+    print(name)
+greet()
 
