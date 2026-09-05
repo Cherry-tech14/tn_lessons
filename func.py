@@ -107,7 +107,7 @@ brew_custom_cup("Latte", "large", "hot", milk="almond", sugar=1)
 def greet(name):
     print("Hello", name)
 greet("Mariam")
-'''
+
 # local variable
 def greet():
     name = "Mariam"
@@ -120,3 +120,25 @@ def greet():
     print(name)
 greet()
 
+def say_hello():
+    print("Hello!")
+def execute(function):
+    function()
+execute(say_hello)
+
+
+# using lambda function
+numbers = [1, 2, 3, 4]
+result = map(lambda x: x * 2, numbers)
+print(list(result))
+
+# using map()
+names = "Mariam", "Aisha", "John"
+result = map(lambda name: name.upper(), names)
+print(list(result))
+'''
+
+# using filter()
+names = ["Mariam", "John", "Michael", "Ada"]
+result = filter(lambda name: len(name) > 4, names)
+print(list(result))
