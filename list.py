@@ -61,7 +61,7 @@ last_item = items.pop()
 print(last_item)
 items.remove("Vanilla")
 print(items)  
-'''
+
 
 flavors = ["Vanilla", "Caramel", "Hazelnut"]
 flavors.sort()
@@ -70,4 +70,12 @@ print(flavors)
 prices = [4.50, 3.50, 5.00]
 prices.sort()
 print(prices)
+'''
+
+numbers = [10, 20, 30, 40, 50]
+print(numbers[1:4])
+
+numbers = [5, 2,8, 1, 3]
+numbers.sort()
+print(numbers)
 

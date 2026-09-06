@@ -19,9 +19,18 @@ def calculate_water(mugs):
 stack_size = 3
 total_water_ml = calculate_water(stack_size)
 print(total_water_ml)  
-'''
+
 def sum_stack(mugs):
     if mugs <= 0:
         return 0
     return mugs + sum_stack(mugs - 1)
 print(sum_stack(4))
+'''
+def countdown(number):
+    if number == 0:
+        print("STOP!")
+        return
+    print(number)
+    countdown(number - 1)
+countdown(5)
+    
