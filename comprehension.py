@@ -33,8 +33,42 @@ print(discounted_menu)
 stock = {"cups": 100, "lids": 150}
 double_stock = {item: count * 2 for item, count in stock.items()}
 print(double_stock)
-'''
+
 # set comprehensions
 messy_names = ["LATTE", "latte", "espresso", "latte"]
 unique_clean = {name.lower() for name in messy_names}
 print(unique_clean)
+
+# list comprehensions
+numbers = [1, 2, 3, 4, 5]
+
+doubled = [number * 2 for number in numbers]
+
+print(doubled)
+
+names = ["john", "mary", "peter"]
+upper_names = [name.upper() for name in names]
+print(upper_names)
+
+
+# dictionary comprehensions
+names = ["Alex", "John", "Mary"]
+name_lengths = {name: len(name) for name in names}
+print(name_lengths)
+
+numbers = [1, 2, 3, 4]
+squares = {number: number * number for number in numbers}
+print(squares)
+
+
+# set comprehensions
+numbers = [1, 2, 3, 4, 5]
+squares = {number * number for number in numbers}
+print(squares)
+'''
+
+# real world application
+# Or perhaps you only want products costing more than 100:
+prices = [100, 250, 50, 300, 150]
+expensive = [price for price in prices if price > 100]
+print(expensive)

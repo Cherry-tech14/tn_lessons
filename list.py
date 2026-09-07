@@ -70,12 +70,52 @@ print(flavors)
 prices = [4.50, 3.50, 5.00]
 prices.sort()
 print(prices)
-'''
 
+
+# slicing in list
 numbers = [10, 20, 30, 40, 50]
 print(numbers[1:4])
 
+# sort
 numbers = [5, 2,8, 1, 3]
 numbers.sort()
 print(numbers)
+
+# list methods(append)
+fruits = ["apple", "banana",]
+fruits.append("orange")
+print(fruits)
+
+names = ["Mariam", "Joy", "Blessing"]
+names.append("Emmanuel")
+print(names)
+
+# insert
+fruits = ["apple", "banana",]
+fruits.insert(1,"orange")
+print(fruits)
+
+# remove()
+fruits = ["apple", "banana", "orange"]
+fruits.remove("orange")
+print(fruits)
+
+# pop()
+fruits = ["apple", "banana", "orange"]
+fruits.pop(1)
+print(fruits)
+
+# reverse()
+numbers = [1, 2, 3, 4]
+numbers.reverse()
+print(numbers)
+'''
+
+# mutability
+names = ["Mariam", "John"]
+names.append("David")
+names[0] = "Sarah"
+print(names)
+
+# Tuples
 

@@ -44,3 +44,51 @@ print(kiosk)
 menu = {"Latte": 4.50}
 print(menu.get("Chai"))
 print(menu.get("Chai", 3.00))
+
+# creating a dictionary
+student = {
+    "name": "Mary",
+    "age": 12,
+    "course": "Python"
+}
+print(student)
+
+# assessing a value
+student = {
+    "name": "Mary",
+    "age": 12,
+    "course": "python"
+}
+print(student["name"])
+print(student["age"])
+
+# changing a value
+student = {
+    "name": "Mary",
+    "age": 12,
+    "course": "Python"
+}
+student["age"] = 13
+print(student)
+
+# adding a new item
+student = {
+    "name": "Mariam",
+    "age": 26
+}
+
+student["country"] = "Nigeria"
+
+print(student)
+
+# removing an item
+student = {
+    "name": "Mariam",
+    "age": 26,
+    "country": "Nigeria"
+}
+
+student.pop("age")
+
+print(student)
+
