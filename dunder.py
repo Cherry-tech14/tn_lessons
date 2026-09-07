@@ -51,3 +51,28 @@ student1 = Student("Alex")
 student2 = Student("Alex")
 
 print(student1 == student2)
+
+# Real world application
+# creating a product class
+class Product:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+    def __str__(self):
+        return f"{self.name} - ₦{self.price}"
+
+    def __repr__(self):
+        return f"Product(name='{self.name}', price={self.price})"
+
+    def __eq__(self, other):
+        return self.name == other.name and self.price == other.price
+
+
+product1 = Product("Laptop", 500000)
+product2 = Product("Laptop", 500000)
+
+print(product1)
+print(repr(product1))
+
+print(product1 == product2)
