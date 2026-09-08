@@ -68,7 +68,7 @@ my_chain = CupChain()
 my_chain.append("Alice")
 my_chain.append("Bob")
 my_chain.traverse_and_print()
-'''
+
 
 class Node:
     def __init__(self, data):
@@ -82,3 +82,85 @@ current = head
 while current is not None:
     print(current.data)
     current = current.next
+    
+# building the node class
+class CupNode:
+    def __init__(self, cup):
+        self.cup = cup
+        self.next = None
+cup1 = CupNode("cup 1")
+
+print(cup1.cup)
+print(cup1.next)
+
+# manually linking a nodes
+class CupNode:
+    def __init__(self, cup):
+        self.cup = cup
+        self.next = None
+
+
+cup1 = CupNode("Cup 1")
+cup2 = CupNode("Cup 2")
+cup3 = CupNode("Cup 3")
+
+cup1.next = cup2
+cup2.next = cup3
+
+print(cup1.cup)
+print(cup1.next.cup)
+print(cup1.next.next.cup)
+
+# creating one node
+class Node:
+    def __init__(self, name):
+        self.name = name
+        self.next = None
+node1 = Node("Mariam")
+
+print(node1.name)
+print(node1.next)
+
+#creating 2 nodes
+class Node:
+    def __init__(self, name):
+        self.name = name
+        self.next = None
+node1 = Node("Mariam")
+node2 = Node("Alex")
+
+print(node1.name)
+print(node2.name)
+
+
+# connecting a node
+class Node:
+    def __init__(self, name):
+        self.name = name
+        self.next = None
+node1 = Node("Mariam")
+node2 = Node("Alex")
+
+node1.next = node2
+
+print(node1.name)
+print(node1.next.name)
+'''
+
+# creating 3 nodes
+class Node:
+    def __init__(self, name):
+        self.name = name
+        self.next = None
+
+
+node1 = Node("Mariam")
+node2 = Node("Alex")
+node3 = Node("Jordan")
+
+node1.next = node2
+node2.next = node3
+
+print(node1.name)
+print(node1.next.name)
+print(node1.next.next.name)
