@@ -5,7 +5,6 @@ import requests
 response = requests.get("https://example.com")
 
 print(response.status_code)
-'''
 
 import requests
 
@@ -18,3 +17,9 @@ if response.status_code == 200:
     print(f"Followers: {data['followers']}")
 else:
     print(f"Request failed with status code: {response.status_code}")
+    '''
+
+import requests
+response = requests.get("https://example.com")
+print(response.status_code)
+print(response.url)
