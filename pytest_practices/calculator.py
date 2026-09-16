@@ -1,8 +1,8 @@
 # example of code using pytest
-'''
+
 def add(a, b):
     return a + b
-
+'''
 def calculate_subtotal(price, quantity):
     if price < 0 or quantity < 0:
         raise ValueError("Inputs cannot be negative!")
