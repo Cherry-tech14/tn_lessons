@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Grow, Shrink and Basis</title>
+
+    <style>
+        .container {
+            display: flex;
+            width: 600px;
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 20px;
+            flex-basis: 150px;
+        }
+
+        .box1 {
+            flex-shrink: 2;
+        }
+
+        .box2 {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+    </div>
+
+</body>
+</html>
