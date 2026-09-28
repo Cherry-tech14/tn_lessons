@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 100px 1fr 80px;
+            grid-template-areas:
+                "header header header"
+                "sidebar main main"
+                "footer footer footer";
+            min-height: 100vh;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">Header</header>
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </aside>
+        <main class="main">
+            <h2>Main Content</h2>
+            <p>This is the main content area. It takes up the rest of the space.</p>
+            <p>The sidebar is on the left and the header and footer span the full width.</p>
+        </main>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
