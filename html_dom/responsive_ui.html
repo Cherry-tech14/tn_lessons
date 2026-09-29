@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jobs</title>
+
+        <style>
+            .jobs {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+
+            @media (max-width: 600px) {
+                .jobs {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="jobs"></div>
+        <div>Python Developer</div>
+        <div>Data Analyst</div>
+        <div>Frontend Developer</div>
+    </body>
+</html>
