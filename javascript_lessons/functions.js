@@ -74,3 +74,6 @@ function greetUser(name) {
 }
 
 processUser("Alice", greetUser);
+
+// factory function
+
