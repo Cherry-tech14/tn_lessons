@@ -1,4 +1,5 @@
 // exercise
+/*
 const colors = ["Red", "Blue", "Green", "Yellow", "Black"]
 console.log(colors[0])
 
@@ -14,3 +15,11 @@ queue.shift();
 queue.push("Customer D");
 
 console.log(queue);
+*/
+// exercise on Array
+let foods = ["Rice", "Beans", "Yam", "Plantain"];
+console.log(foods[0]);
+console.log(foods[3]);
+
+foods[1] = "Spaghetti";
+console.log(foods)
