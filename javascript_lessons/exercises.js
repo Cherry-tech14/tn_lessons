@@ -15,7 +15,7 @@ queue.shift();
 queue.push("Customer D");
 
 console.log(queue);
-*/
+
 // exercise on Array
 let foods = ["Rice", "Beans", "Yam", "Plantain"];
 console.log(foods[0]);
@@ -23,3 +23,11 @@ console.log(foods[3]);
 
 foods[1] = "Spaghetti";
 console.log(foods)
+*/
+
+let patients = ["Alex", "John", "Mary"];
+patients.push("David");
+patients.shift("Alex");
+patients.unshift("Sarah")
+console.log(patients)
+ 
