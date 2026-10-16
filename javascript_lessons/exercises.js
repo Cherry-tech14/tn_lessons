@@ -39,7 +39,7 @@ let newSalaries = salaries.map((salary) => {
     return salary + (salary * 10 / 100);
 });
 console.log(newSalaries)
-*/
+
 
 //questions: Suppose a company wants to increase every employee's salary by 20%.
 
@@ -48,3 +48,29 @@ let newSalaries = salaries.map((salary) => {
     return salary + (salary * 20/100);
 });
 console.log(newSalaries)
+
+// exercise map to update object properties
+let products = [
+    {name: "Laptop", price: 200000},
+    {name: "Phone", price:  100000}
+];
+let updatedProducts = products.map((product) => {
+    return {
+        name: product.name,
+        price: product.price + (product.price * 10/100)
+    };
+});
+console.log(updatedProducts);
+*/
+
+//Using the .each()
+let students = ["John", "Mary", "Alex"];
+
+students.forEach((student) => {
+    console.log("Welcome " + student);
+})
+
+let products = ["Laptop", "Phone", "Tablet"];
+products.forEach((product) => {
+    console.log("Available: " + product)
+})
