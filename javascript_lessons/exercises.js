@@ -61,7 +61,7 @@ let updatedProducts = products.map((product) => {
     };
 });
 console.log(updatedProducts);
-*/
+
 
 //Using the .each()
 let students = ["John", "Mary", "Alex"];
@@ -73,4 +73,25 @@ students.forEach((student) => {
 let products = ["Laptop", "Phone", "Tablet"];
 products.forEach((product) => {
     console.log("Available: " + product)
+})
+
+// method chaining
+let prices = [1000, 2000, 3000];
+
+prices
+    .map((price) => {
+        return price + 500;
+    })
+    .forEach((price) => {
+        console.log(price);
+    });
+*/
+
+let salaries = [30000, 50000, 70000];
+salaries
+    .map((salary) => {
+        return salary + 5000;
+    })
+.forEach((salary) => {
+        console.log(salary)
 })
