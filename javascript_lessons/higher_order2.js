@@ -72,3 +72,18 @@ let sortedBalances = [...balances].sort((a, b) => {
 console.log("Original Balances:", balances);
 console.log("Sorted Balances:", sortedBalances);
 */
+
+// Building a chained pipeline
+
+let salaries = [30000, 70000, 50000, 90000, 40000];
+let updatedSalaries = salaries
+    .filter((salary) => {
+        return salary >= 50000;
+    })
+    .map((salary) => {
+        return salary + 10000;
+    })
+    .sort((a, b) => {
+        return a - b;
+    });
+console.log(updatedSalaries);

@@ -85,7 +85,7 @@ prices
     .forEach((price) => {
         console.log(price);
     });
-*/
+
 
 let salaries = [30000, 50000, 70000];
 salaries
@@ -111,3 +111,38 @@ let sortedPrices = [...prices].sort((a, b) => {
 });
 console.log("Original:", prices);
 console.log("Sorted:", sortedPrices);
+*/
+// Exercise on multiple chained pipeline
+
+let prices = [5000, 20000, 10000, 30000, 15000];
+
+let updatedPrices = prices
+    .filter((price) => {
+        return price >= 10000;
+    })
+    .map((price) => {
+        return price + 2000;
+    })
+    .sort((a, b) => {
+        return b - a;
+    });
+
+console.log(updatedPrices);
+
+//Real world application
+
+let products = [
+    { name: "Laptop", price: 250000},
+    { name: "Phone", price: 120000},
+    { name: "Mouses", price: 5000},
+    { name: "Keyboard", price: 15000},
+    { name: "Monitor", price: 80000}
+];
+let expensiveProducts = products
+    .filter((product) => {
+        return product.price >= 50000;
+    })
+    .sort((a, b) => {
+        return a.price - b.price;
+    });
+console.log(expensiveProducts);
