@@ -95,3 +95,7 @@ salaries
 .forEach((salary) => {
         console.log(salary)
 })
+
+// higher order method 2 exercise
+let balances = [50000, 15000, 80000, 25000, 10000];
+
