@@ -47,7 +47,7 @@ numbers.sort((a, b) => {
     return a - b;
 });
 console.log(numbers);
-*/
+
 //sorting numbers correctly: descending order
 let numbers = [5, 100, 20, 3, 50]
 
@@ -55,3 +55,20 @@ numbers.sort((a, b) => {
     return b - a;
 });
 console.log(numbers);
+
+// .sort() mutates the original array
+let numbers = [30, 10, 20];
+let sortedNumbers = [...numbers].sort((a, b) => {
+    return a - b;
+});
+console.log("Original:", numbers);
+console.log("Sorted:", sortedNumbers);
+
+// real world application
+let balances = [50000, 20000, 80000, 10000];
+let sortedBalances = [...balances].sort((a, b) => {
+    return b - a;
+});
+console.log("Original Balances:", balances);
+console.log("Sorted Balances:", sortedBalances);
+*/

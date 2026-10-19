@@ -103,3 +103,11 @@ balances.sort((a, b) => {
     return b - a;
 });
 console.log(balances)
+
+
+let prices = [25000, 10000, 50000, 15000];
+let sortedPrices = [...prices].sort((a, b) => {
+    return a - b;
+});
+console.log("Original:", prices);
+console.log("Sorted:", sortedPrices);
