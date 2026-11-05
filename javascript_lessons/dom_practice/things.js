@@ -10,7 +10,6 @@ heading.textContent = "Welcome to Smart Store";
 description.textContent = "We sell laptops and smartphones.";
 
 offer.innerHTML = "<strong>Special Offer: 20% Discount!</strong>";
-*/
 
 // exercise 2
 let storeTitle = document.querySelector("#store-title");
@@ -26,3 +25,10 @@ discount.innerHTML = "<strong>50% OFF!</strong>";
 storeTitle.style.color = "blue";
 product.style.fontSize = "24px";
 discount.style.backgroundColor = "yellow";
+*/
+
+//Dom manipulation 2: Element Creation
+
+let paragraph = document.createElement("p");
+
+paragraph.textContent = "I am learning JavaScript!";
